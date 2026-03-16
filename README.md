@@ -518,14 +518,14 @@ This error should no longer occur with automatic PPP activation (dialing 777). I
 
 **Debug Method: Check what's happening**
 
-The modem outputs debug logs via USB (when PPP_DEBUG_LOGGING=1 in code). To see detailed PPP activity:
+The modem outputs debug logs via USB (when PPP_LOG_LEVEL=1 in code). To see detailed PPP activity:
 
 1. Keep Lilka connected to USB while also connected to Windows via RS232
 2. Open PlatformIO Serial Monitor (115200 baud)
 3. Try connecting from Windows
 4. You should see PPP negotiation messages (if logging enabled)
 
-**Note:** By default, PPP logging is disabled for performance (PPP_DEBUG_LOGGING=0). This dramatically improves speed. Enable logging only for troubleshooting.
+**Note:** By default, PPP logging is disabled for performance (PPP_LOG_LEVEL=0). This dramatically improves speed. Enable logging only for troubleshooting.
 
 **Direct PPP Frames:**
 
